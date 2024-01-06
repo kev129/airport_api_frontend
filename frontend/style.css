@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+  background-image: url(./assets/leaves.webp);
+}
+
+#userSearchBox{
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#userSearchMatches {
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchBtn{
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#userSearchMatches li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #eee;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+#flightResults table{
+  border: 2px black solid;
+  backdrop-filter: blur(2px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#flightResults table th{
+  border: 2px black solid
+}
+
+#flightResults table tr td {
+  border: 2px black solid;
+}
+
+
+
