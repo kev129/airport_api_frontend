@@ -1,7 +1,8 @@
 // Creating a list of airport names
+var baseURL = window.location.pathname
 
 async function getData(){
-    const response = await fetch('./assets/airports2.json')
+    const response = await fetch(`${baseURL}/assets/airports2.json`)
     const apiData = await response.json()
    
     return(apiData)
@@ -204,7 +205,7 @@ async function loadFlightInfo(){
 
     let tableHeading = document.createElement('h3')
     let img = document.createElement('img')
-    img.setAttribute('src', './assets/200w.webp')
+    img.setAttribute('src', `${baseURL}/assets/200w.webp`)
     tableHeading.textContent = 'Loading Your Flights...'
     flightResults.append(tableHeading)
     flightResults.append(img)
