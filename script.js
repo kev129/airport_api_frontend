@@ -81,7 +81,7 @@ async function postUserInput(){
         }
 
         console.log(inputValueObj)
-        const response = await fetch('http://127.0.0.1:5000/process_input', {
+        const response = await fetch('https://flight-info-api.onrender.com/process_input', {
             
             method: 'POST',
             headers: {
@@ -98,7 +98,7 @@ async function postUserInput(){
 
 // GET flights for user selected airport
 async function getFlightInfo(){
-    const response = await fetch('http://127.0.0.1:5000/get_flights')
+    const response = await fetch('https://flight-info-api.onrender.com/get_flights')
     console.log('getting flights')
     console.log(response)
     console.log(response.status)
